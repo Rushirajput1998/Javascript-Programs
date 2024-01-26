@@ -13,7 +13,11 @@ const num1=14.8;
 // console.log(Math.ceil(num1));
 
 const num2=16;
-console.log(Math.sqrt(num2));
+// console.log(Math.sqrt(num2));
 
 const num3=27
-console.log(Math.cbrt(num3));
+// console.log(Math.cbrt(num3));
+
+
+
+console.log(Math.pow(2,3));//8
