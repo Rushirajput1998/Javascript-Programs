@@ -16,7 +16,7 @@ function one(){
         let password="rishirajput1998"
         console.log(username);
     }
-    // console.log(password);
+    // console.log(password);//cannot access child properties
      two();
 }
 
