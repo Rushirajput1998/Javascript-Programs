@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ;color:white;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+function addLang(langName){
+    const add=document.querySelector(".lang")
+    const li=document.createElement('li')
+   li.innerHTML=`${langName}`;
+    
+    add.appendChild(li);
+}
+addLang("Java");
+function addlangNew(langName){
+    const ele=document.querySelector(".lang").appendChild(document.createElement('li'));
+    const addtxt=document.createTextNode(langName);
+    ele.appendChild(addtxt);
+}
+addlangNew("Python")
+
+//Edit
+const edit=document.querySelector('li:nth-child(2)')
+// edit.innerHTML="React";
+const ele1=document.createElement('li')
+ele1.textContent="Angular";
+edit.replaceWith(ele1)
+
+const edit1=document.querySelector('li:first-child')
+edit1.innerHTML="goLang"
+
+//remove
+const rem=document.querySelector('li:last-child')
+rem.remove();
+</script>
+</html>
