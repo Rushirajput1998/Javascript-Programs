@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="orange">orange</button>
+   <button id="green">green</button> 
+</body>
+<script>
+//     function fun1(){
+//     let username="rushi";
+// // console.log("Outer Function"+u2);//the outer fun cannot access the element of inner fun
+//     function inner(){
+//         let u2="sagar";
+//         console.log("innerFunction "+username);
+//     }
+
+//     function inner2(){
+//         console.log("innerfunction2 "+username);
+//         console.log(u2);//the inner function cannot access the elemnt of othr inner function because of it s scoping
+//     }
+//     inner();
+//     inner2();
+// }
+
+// fun1();
+
+// document.getElementById("orange").onclick=function (){
+//     document.body.style.backgroundColor="orange";
+// }
+// document.getElementById("green").onclick=function (){
+//     document.body.style.backgroundColor="green";
+// }
+
+function clickHandler(color){
+     
+    return function(){
+       return document.body.style.backgroundColor=`${color}`
+    }
+}
+
+document.getElementById("orange").onclick=clickHandler("orange")
+document.getElementById("green").onclick=clickHandler("green")
+
+
+</script>
+</html>
